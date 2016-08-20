@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  Collatz Sequence code  -->
+<html>
+<head>
+
+<script type="text/javascript">
+ 
+function run(){ 
+    var n = parseInt (document.input.number.value);
+	if (isNaN (n))
+	   document.write("Error reading input.");
+     if(n<=0){
+       document.write("Error: Enter an integer greater than zero.");} 
+      else{
+            document.write("The Collatz sequence of  "+ n + " is: <br />");
+            document.write(n+" "); 
+            collatz(n);}
+} //  end of function run().
+
+
+function collatz(n){
+            if (n==1)
+              return;
+            else {
+              if (n % 2 == 1){
+                 document.write(3*n+1+" "); 
+                 collatz(3*n + 1);}
+              else{
+                   document.write(n/2+" "); 
+                   collatz(n / 2);}
+          }
+} // end of fn
+
+</script>
+</head>
+
+<body>
+<p> <form name=input>
+     <p>Enter an integer greater than zero:</p>
+     <p> <input type=text name=number>
+      <input type=button value="Submit" onClick="run ();"> </p>
+    </form></p>
+
+</body>
+</html>
+

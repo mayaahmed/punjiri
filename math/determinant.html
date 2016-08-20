@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Programmer : Maya Ahmed
+     File: determinant.c
+     This file contains the code to compute the determinant of a square matrix.
+      Date: "July 11 2016" -->
+<html>
+<head>
+
+<script>
+
+function run(){
+     var i=0; var j=0;
+	 var input = document.inputForm.matrixData.value;
+     var numInput = input.split(",");
+     var l = numInput.length;
+     if (isNaN (numInput[0])){
+            document.write("Error! Not a matrix");}
+     else{     
+            var s= Math.sqrt(l);
+            if(Number.isInteger(s)){
+	           for(i=0; i<l; i++) 
+               numInput[i] = +numInput[i];
+               var d= determinant(numInput, s);
+               document.write("The determinant of your matrix is "+d);}
+            else{
+                  document.write("Error! Not a square matrix");}
+         }
+ } // end of function run
+
+
+function determinant(A, n){
+    var D=0;  var sign=1; 
+    var r=0;
+    if (n==1)
+       return A[0];
+    for(r=0; r<n; r++){
+          if(A[r] !=0){
+             sign=Math.pow(-1,r);
+             D = D +sign*A[r]*determinant(deleteColumn(A,n,r),n-1); 
+          }
+      }
+     return D;
+ }//end of function determinant
+
+function deleteColumn(A, n, j){
+    var z=(n-1)*(n-1);
+    var  B = new Array(z);
+    var m=0;
+    for(i=1; i<n; i++){
+        for(k=0; k<n; k++){ 
+            if(k != j){  
+              B[m] = A[i*n+k];
+               m = m+1;
+                 }}}          
+     return B; 
+} /* end of delete_column function */
+
+run();
+
+</script>
+
+</head>
+
+<body>
+
+<p><form name="inputForm">
+<p>Enter a square matrix in the textbox below  separated by commas. <br/>
+Example input:<br/> 
+ 1, 2, 3,  <br/>
+ 7, 15, 30, <br/>
+ 25, 8, 1 <br/></P>
+
+<textarea name="matrixData" rows="8" cols="40">
+</textarea> <br/>
+<input type=button value="Submit" onClick="run();"></p> 
+</form>
+
+</body>
+</html>
+
