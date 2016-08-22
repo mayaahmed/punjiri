@@ -77,8 +77,8 @@ opacity: 0.7;
 text-align: center;
 color: olive;
 padding-right: 100px;
-padding-top: 75px;
-	font: bold 50px Comic Sans MS;
+padding-top: 40px;
+	font: bold 40px Comic Sans MS;
 text-shadow: 3px 3px 0 #000;
 }
 
@@ -98,7 +98,7 @@ color: olive;
 
 
 .column a:hover{
-font-size: 51px;
+font-size: 41px;
  cursor: pointer;
 
 }
