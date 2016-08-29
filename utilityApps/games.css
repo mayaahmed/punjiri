@@ -84,7 +84,7 @@ background: yellow;
 float: left;
 text-align: center;
 color: olive;
-padding-right: 100px;
+padding-right: 50px;
 padding-top: 25px;
 font-size: 16px;
 }
@@ -92,10 +92,7 @@ font-size: 16px;
 
 
 
-#snakes{
-clear: both;
-float: left;
-}
+
 
 .column a{
 text-decoration: none;
