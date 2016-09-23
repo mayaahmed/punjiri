@@ -67,7 +67,7 @@ float:right;
 #main_section{
 	border: 1px solid olive;
 border-radius: 25px;
-
+text-align: center;
 	margin: 20px;
 	padding: 20px;
  background: linear-gradient(khaki,white);
@@ -76,19 +76,8 @@ border-radius: 25px;
 
 
 
-#the_footer{
-	text-align: center;
-	padding: 20px;
-	border-top: 2px solid white;
-    color: white;
-    background: yellow;
-}
 
-#table{
-// width: 100%;
- margin-left:50px;
 
-}
 
 .column{
 float: left;
