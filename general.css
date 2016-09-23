@@ -8,8 +8,8 @@ body{
 	width: 100%;
 	display: -webkit-box;
 	-webkit-box-pack: center;
-//    background: black; 
- background: linear-gradient(black 10%,olive, black 50%,olive, khaki,olive,black);
+  background: black; 
+ // background: linear-gradient(black 10%,olive, black 50%,olive, khaki,olive,black);
 }
 
 
