@@ -10,26 +10,22 @@
 <head>
 	<meta charset="utf-8" />
     <title>Punjiri: Web and Mobile Technologies.</title>
-        <link rel="stylesheet" type="text/css"  href="general.css"> 
-      <link rel="stylesheet" type="text/css"  href="punjiri.css"> 
+  
+      <link rel="stylesheet" type="text/css"  href="general.css"> 
+      <link rel="stylesheet" type="text/css"  href="games.css"> 
     
 </head>
 
 <body>
-
-
   
   <div id="big_wrapper">
          
     <div id="topStuff">
         <header id="top_header">
-          <p><img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"> <div id="titleTextdiv" > Web and Mobile Technologies </div> </p>
+            <p><img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"> <div id="titleTextdiv" 
+> Mind Games </div> </p>
 		   
 		   </header>
-
-
-
-
 
 			<nav id="top_menu">
 		      <ul>
@@ -43,6 +39,11 @@
                   </div>
                   </li>-->
 
+                <li>
+                  <a id="home" href="../index.html">Home </a>
+                </li>
+
+
                   <li>
                     <div id="myNav" class="overlay">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
@@ -51,66 +52,72 @@
                        <p> Email: maya.ahmed@gmail.com</p>
                       </div>
                     </div>
-                    <span style="font-size:30px; cursor:pointer" onclick="openNav()"> &equiv;</span>
+                    <span style="font-size:14px; cursor:pointer" onclick="openNav()"> About</span>
                   </li>
               </ul>
 			</nav>
          </div> <!-- end of topStuff -->
     
-
-<div id="preloaderOverlay">
-
-<div id="pacmanDiv"> <h2 id="loadingText">Loading.....</h2> 
-<div class="track">
-<div class="kurt">
-<div class="loader"> </div>
-</div>
-</div>
-</div>
- </div> 
-
-
-<section id="main_section">  
-
- <div class="column"  onclick="">
-<p> <a href="galleryIndex.html">Gallery</p>				
-<p><a href="galleryIndex.html">	<img id="gallerypic" src="galleryIcon.png"  height=115 width=175 style="box-shadow: 1px 1px 10px black;">	</p>  	
+    <!-- <div id="overlay"> 
+              <div id="spinnerDiv">
+              <div class="spinner"> </div>
+            </div>
+          </div>
+    -->          
+<div id="spinnerDiv">
+<h2 id="spinnerText"> Loading ........ </h2>
+<div class="spinner"> </div> 
 </div>
 
+          <section id="main_section">   
+
+           
+
+<div id="table">
+<div class="column" > 
+<p><a ""> <h1>Tic Tac Toe </h1> </a></p>
+<p><a href=""><img id="tictacpic" src="tictac512.png"  height=125 width=125></p>
+<p> <a href="https://mayaahmed.github.io/TicTacToe/" class="playOnlineButton"> Play Online</a> </p>
+<p> <a href="https://build.phonegap.com/apps/2202624/share" class="downLoadButton"  >Mobile Download</a> </p>
+</div>   
 <div class="column"  onclick="">
-<p> <a href="paintIndex.html">Paint</p>				
-<p><a href="paintIndex.html">	<img  src="paintIcon.png"  height=135 width=135  >	</p>  	
+<a href=""><h1>Sudoku </h1></a>					
+<p><a href="">	<img id="sudokupic" src="sudoku.png"  height=125 width=125>	</p> 
+<p> <a href="https://mayaahmed.github.io/Websudoku/" class="playOnlineButton"  > Play Online</a> </p> 	
+<p> <a href="https://build.phonegap.com/apps/2199162/share" class="downLoadButton"  >Mobile Download</a> </p>
 </div>
 
+<div class="column"   onclick="">
+<a href=""><h1>Dots And Boxes</h1></a>  
+<p><a href=""><img id="dotsNBoxespic" src="dotsNBoxes512.png"  height=125 width=125> </p>
+<p> <a href="https://mayaahmed.github.io/dotsNboxestrial/" class="playOnlineButton" >Play Online</a> </p>
+<p> <a href="https://build.phonegap.com/apps/2221671/share" class="downLoadButton" >Mobile Download</a> </p>
+</div>		
+
+<div class="column" id="pegs" onclick="">
+<a href=""><h1>Pegs Solitaire</h1>  
+<p><a href=""><img src="pegs.png"  height=80 width=100> </p>
+<p> <a href="https://mayaahmed.github.io/pegsSolitaireWeb/" class="playOnlineButton"  >Play Online </p>
+<p> <a href="https://build.phonegap.com/apps/2275787/share" class="downLoadButton" >Mobile Download </p>
+</div>					
+			
+
+<div class="column" id="snakes" onclick="">
+<a href=""><h1>Snakes And Ladders</h1>  
+<p><a href=""><img id="snakesAndLadderpic" src="snakesAndLadder.png"  height=100 width=100> </p>
+<p> <a href="https://mayaahmed.github.io/snakesAndLadders/" class="playOnlineButton" >Play Online </p>
+</div>					
+
+<div class="column" id="ludo" onclick="">
+<a href=""><h1>Ludo</h1>  
+<p><a href=""><img id="ludopic" src="ludo.png"  height=100 width=100> </p>
+<p> <a href="https://mayaahmed.github.io/ludo/" class="playOnlineButton"  >Play Online </p>
+</div>					
 
 
 
-<div class="column"  onclick="">
-<a href="Games/index.html">Games</a>
-<p><a href="Games/index.html"><img id="gamespic" src="sudoku.png"  height=150 width=150 ></p>
-</div> 
-
-
-<div class="column"  onclick="">
-<p> <a href="Greetings/index.html">Greeting Cards</p>				
-<p><a href="Greetings/index.html">	<img  src="greetingsIcon.png"  height=120 width=120 >	</p>  	
 </div>
-
-
-
-
-<div class="column"  onclick="">
-<p> <a href="mathmachineIndex.html">Math Machine</p>				
-<p><a href="mathmachineIndex.html">	<img  src="graphIcon.png"  height=100 width=100  style="box-shadow: 1px 1px 10px black;">	</p>  	
-</div>
-
-
-<div class="column"  onclick="">
-<p> <a href="keyboardIndex.html">Keyboard</p>				
-<p><a href="keyboardIndex.html">	<img  src="keyboardIcon.png"  height=90 width=200 >	</p>  	
-</div>
-
-
+           
 
 
 
