@@ -32,7 +32,7 @@ window.onclick = function(event) {
     }
   }}
 
-var overlay = document.getElementById("overlay");
+var overlay = document.getElementById("preloaderOverlay");
 window.addEventListener("load", function(){
     overlay.style.display="none";
 
