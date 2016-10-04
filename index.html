@@ -11,25 +11,24 @@
 	<meta charset="utf-8" />
     <title>Punjiri: Web and Mobile Technologies.</title>
         <link rel="stylesheet" type="text/css"  href="general.css"> 
-      <link rel="stylesheet" type="text/css"  href="punjiri.css"> 
     
+      <link rel="icon" type="image/png" href="punjiri.png">   
 </head>
+
 
 <body>
 
 
+<div id="containerDiv">
+
   
-  <div id="big_wrapper">
-         
-    <div id="topStuff">
-        <header id="top_header">
-          <p><img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"> <div id="titleTextdiv" > Web and Mobile Technologies </div> </p>
-		   
-		   </header>
+          <header id="top_header">
+ 
+          <div class="front">  Punjiri Web and Mobile Technologies </div>
+          <div class="logo"> <img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"></div>
+ 	   </header>
 
-
-
-
+          <div id="navDiv">
 
 			<nav id="top_menu">
 		      <ul>
@@ -51,45 +50,40 @@
                        <p> Email: maya.ahmed@gmail.com</p>
                       </div>
                     </div>
-                    <span style="font-size:30px; cursor:pointer" onclick="openNav()"> &equiv;</span>
+                    <span style="font-size:40px; cursor:pointer" onclick="openNav()"> &equiv;</span>
                   </li>
               </ul>
 			</nav>
-         </div> <!-- end of topStuff -->
-    
+         
+          </div>   
 
-<div id="preloaderOverlay">
-
-<div id="pacmanDiv"> <h2 id="loadingText">Loading.....</h2> 
-<div class="track">
-<div class="kurt">
-<div class="loader"> </div>
-</div>
-</div>
-</div>
- </div> 
-
-
-<section id="main_section">  
-
- <div class="column"  onclick="">
-<p> <a href="galleryIndex.html">Gallery</p>				
-<p><a href="galleryIndex.html">	<img id="gallerypic" src="galleryIcon.png"  height=115 width=175 style="box-shadow: 1px 1px 10px black;">	</p>  	
-</div>
-
-<div class="column"  onclick="">
-<p> <a href="paintIndex.html">Paint</p>				
-<p><a href="paintIndex.html">	<img  src="paintIcon.png"  height=135 width=135  >	</p>  	
-</div>
+          <div id="preloaderOverlay">
+            <div id="pacmanDiv"> <h2 id="loadingText">Loading.....</h2> 
+              <div class="track">
+                <div class="kurt">
+                  <div class="loader"> </div>
+                </div>
+              </div>
+            </div>
+          </div> 
 
 
+ <section id="main_section">  
+   <div class="column"  onclick="">
+     <p> <a href="galleryIndex.html">Gallery</p>				
+     <p><a href="galleryIndex.html">	<img id="gallerypic" src="galleryIcon.png"  height=115 width=175 style="box-shadow: 1px 1px 10px black;">	</p>  	
+   </div>
+
+   <div class="column"  onclick="">
+     <p> <a href="paintIndex.html">Paint</p>				
+     <p><a href="paintIndex.html">	<img  src="paintIcon.png"  height=135 width=135  >	</p>  	
+   </div>
 
 
 <div class="column"  onclick="">
 <a href="Games/index.html">Games</a>
 <p><a href="Games/index.html"><img id="gamespic" src="sudoku.png"  height=150 width=150 ></p>
 </div> 
-
 
 <div class="column"  onclick="">
 <p> <a href="Greetings/index.html">Greeting Cards</p>				
@@ -111,19 +105,10 @@
 </div>
 
 
+</section>
 
-
-
-
-          </section>
-
-
+</div> <!-- containerDIv -->
           
-
-</div> <!--end of big wrapper -->
-
-
-	
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
