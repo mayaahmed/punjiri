@@ -42,6 +42,7 @@ opacity: 0.8;
 color: khaki;
 font: bold 35px Comic Sans MS;
 margin-left: 20%;
+text-shadow: 1px 0px 2px yellow;
 }
 
 .front:hover{
