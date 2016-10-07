@@ -11,14 +11,13 @@ body{
 }
 
 #containerDiv{
-
 margin:0;
 display: flex;
 
 }
 
 .logo{
-margin-top: 10px;
+margin-top: 0px;
 position: absolute;
 z-index: 3;
 opacity: 0.8;
@@ -55,7 +54,7 @@ opacity: 1;
 #main_section{
 margin-top: 125px;
 border: 1px solid olive;
-border-radius: 25px;
+// border-radius: 25px;
 width: 98%;
 display: flex;
  flex-wrap: wrap;
