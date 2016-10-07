@@ -11,8 +11,10 @@ body{
 }
 
 #containerDiv{
+
 margin:0;
 display: flex;
+
 }
 
 .logo{
@@ -20,7 +22,7 @@ margin-top: 10px;
 position: absolute;
 z-index: 3;
 opacity: 0.8;
-margin-left: 5%;
+margin-left: 1%;
 }
 
 #iconpic:hover{
@@ -60,16 +62,10 @@ display: flex;
 padding: 20px;
  background: linear-gradient(khaki,white);
  box-shadow: 7px 7px 10px black;
-opacity: 0.8;
+opacity: 0.8; position: absolute;
+z-index: -1;
 }
 
-#navDiv{
-background:  #FFFFCC;
-padding: 5px;
-font-size: 40px;
-color: gray;
-opacity: 0.8;
-}
 
 
 .column{
@@ -104,220 +100,10 @@ font-size: 23px;
 
 
 
-/////////////////////////////////
-
-
-.dropdown {
-    position: relative;
-   display: inline-block;
-}
-
-
-.dropbtn {
-    background:#1c1c1c;
-  //  color: #CCE5FF;
-   color: khaki;
- padding: 16px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  
-    font-size: 19px;
-}
-
-
-.dropdown-content {
- background:#1c1c1c;
-    display: none;
-    position: absolute;
-    min-width: 75px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-
-.dropdown-content a {
-    color: white;
-    font-size: 12px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
 
 
 
-.dropdown-content a:hover {background-color:#CCE5FF;}
-
-.show {display:block;}
 
 
 
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-}
 
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 40px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-.overlay p {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 40px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay p:hover, .overlay p:focus {
-   color: #f1f1f1;
-}
-
-.closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px;}
-  .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-
-/* preloader */
-.track{
-  width: 300px;
-  height: 0px;
-  // border-top: 8px dotted rgba(0,0,0,0.2);
-border-top: 8px dotted wheat;
-
-  display: inline-block;
-}
-
-.kurt{
- animation: moveChomp 5s linear infinite;
-  width: 0px;
-  height: 0px;
-  position: relative;
-  top: -15px;
- left: -15px;
-}
-  
-
-
-.loader{
-
-  background: none;
-  display: inline-block;
-  position: relative;
-}
-
-
-.loader:before, .loader:after{
-    content: '';
-    display: block;
-    height: 0px;
-    width: 0px;
- border: 30px solid yellow;
- //   border: 30px solid orangered;
-    border-radius: 50%;
-    border-right-color: transparent;
-    position: absolute;
-    border-bottom-color: transparent;
-    top: 50%;
-    margin-top: -34px;
-    animation: topchomp 1s ease-in-out infinite reverse;
-  
-}
-
-  .loader:after{
-   // left: 80px;
-    border-color: yellow;
-    border-top-color: transparent;
-    border-right-color: transparent;
-   animation: bottomchomp 1s ease-in-out infinite;  
-  
-  }
-
-
-
-@keyframes bottomchomp{
-  0%, 100%{
-    transform: rotate(10deg);}
-  50%{
-    transform: rotate(-50deg);}
-  }
-
-
-
-@keyframes topchomp{
-  0%, 100%{ transform: rotate(-20deg);}
-  50%{ transform: rotate(37deg);}
-}
-  
-
-@keyframes moveChomp{
-0%,100%{
-        left: 0%;}
-    50%{
-        left: 100%;}
-0%{
-    transform: rotateY(90deg);}
-
-3%, 47.5%{
-    transform: rotateY(0deg);}
-
-52.5%, 98%{
-    transform: rotateY(180deg);}
-100%{
-    transform: rotateY(90deg);}
-}
-
-
-#loadingText{
-color: yellow;
-padding: 50px;
-} 
-
-#pacmanDiv{
-    background: #000;
-	opacity: 0.8;
-	position: fixed;
-    z-index:10;
-	top: 0px;
-	width: 100%;
-	height: 1600px;
-}
