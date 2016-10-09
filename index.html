@@ -11,7 +11,9 @@
 	<meta charset="utf-8" />
     <title>Punjiri: Web and Mobile Technologies.</title>
         <link rel="stylesheet" type="text/css"  href="punjiri.css"> 
-    
+     <link rel="stylesheet" type="text/css"  href="preloader.css"> 
+<link rel="stylesheet" type="text/css"  href="dropdown.css"> 
+<link rel="stylesheet" type="text/css"  href="scroll.css"> 
       <link rel="icon" type="image/png" href="punjiri.png">   
 </head>
 
@@ -21,51 +23,45 @@
 
 <div id="containerDiv">
 
+<div id="pagetop">
   
           <header id="top_header">
- 
-          <div class="front">  Punjiri Web and Mobile Technologies </div>
+           <div class="front">  Punjiri Web and Mobile Technologies </div>
           <div class="logo"> <img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"></div>
- 	   </header>
+ 	      </header>
 
-          <div id="navDiv">
-
-			<nav id="top_menu">
-		      <ul>
-                <!--<li>
-
-                  <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Services</button>                  
-                    <div id="myDropdown" class="dropdown-content">
-                     <a href="index.html">Home </a>
-                     </div>
-                  </div>
-                  </li>-->
-
-                  <li>
-                    <div id="myNav" class="overlay">
-                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
-                      <div class="overlay-content">
-                       <p> &copy; Punjiri Web and Mobile Technologies, 2016. </p>
-                       <p> Email: maya.ahmed@gmail.com</p>
-                      </div>
-                    </div>
-                    <span style="font-size:40px; cursor:pointer" onclick="openNav()"> &equiv;</span>
-                  </li>
-              </ul>
-			</nav>
-         
-          </div>   
-
-          <div id="preloaderOverlay">
-            <div id="pacmanDiv"> <h2 id="loadingText">Loading.....</h2> 
-              <div class="track">
-                <div class="kurt">
-                  <div class="loader"> </div>
-                </div>
-              </div>
-            </div>
+   <div id="navDiv">
+          <nav>
+			 <ul>
+               <li> <div id="cpBtn" onclick="toggleCP()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="cp">
+            <P> &copy; Punjiri Web and Mobile Technologies, 2016.  </P>
+            <P>        Mangalore, Karnataka, India  </P>
+                <p> https://mayaahmed.github.io/punjiri/ </p>
+            <P>       Email: maya.ahmed@gmail.com </P>
           </div> 
+                 </li>
+              </ul>
+			</nav> </div>
+   </div>      
+         
+
+  <div id="preloaderOverlay"> 
+   <div id="pacmanDiv">
+     <h2 id="loadingText">Loading.....</h2> 
+     <div class="wrap">
+       <div class="track">
+         <div class="kurt">
+           <div class="loader"> </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
 
 
  <section id="main_section">  
@@ -105,6 +101,12 @@
 </div>
 
 
+<div class="column"  onclick="">
+<p> <a href="https://mayaahmed.github.io/imageEditor/">ImageEditor</p>				
+<p><a href="https://mayaahmed.github.io/imageEditor/">	<img  src="editorIcon.png"  height=150 width=150 >	</p>  	
+</div>
+
+
 </section>
 
 </div> <!-- containerDIv -->
@@ -120,5 +122,7 @@
 
 </script>
 <script src="general.js"></script> 
+<script src="dropdown.js"></script> 
+
 </body>
 </html>
