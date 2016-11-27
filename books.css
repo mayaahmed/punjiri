@@ -66,11 +66,11 @@ float:right;
 
 #main_section{
 	border: 1px solid olive;
-border-radius: 25px;
+border-radius: 5px;
 text-align: center;
 	margin: 20px;
 	padding: 20px;
- background: linear-gradient(khaki,white);
+background: linear-gradient(khaki,white);
 }
 
 
@@ -109,4 +109,27 @@ color: olive;
 font-size: 23px;
  cursor: pointer;
 
+}
+
+
+input[type=button] {
+background-color: #D2B48C;   
+width: 40px;
+height: 40px;
+font-size: 24px;
+color: beige;
+border-radius: 5px;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+opacity: 0.7;
+margin-left: 10px;
+}
+
+input[type=button]:hover{
+opacity:1;
+}
+
+#buttonsDiv{
+//position: fixed;
+text-align: right;
+padding: 10px;
 }
