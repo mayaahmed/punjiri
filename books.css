@@ -1,5 +1,21 @@
 
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+  background: black; 
+ }
+
+
+
+
 #big_wrapper{
+    margin: 0;
 	max-width: 800px; 
 	display:-webkit-box;
 	-webkit-box-orient: vertical;
@@ -9,20 +25,13 @@
 
 
 
-#topStuff{
-margin: 0px; 
-// background:linear-gradient(olive,black);
-
-}
 
 
 #top_header{
 	font: bold 40px Comic Sans MS;
-    // padding: 20px;
    color: khaki;
   
 }
-
 #iconpic{ float: left;
 margin: 2px;
 }
@@ -32,51 +41,19 @@ margin: 2px;
 float: left;
 margin: 20px;
 color: #FFFF33;
-// -webkit-text-stroke: 1px black;
 text-shadow: 3px 3px 0 #000;
 opacity: 0.7;
 }
 
-#top_menu{
-//	border: white;
-	
-//	color: white;
-}
-
-
-#flag{
-font-size: 11px;
-}
-
-
-
-ul{
-float:right;
-}
-
-
-
-#top_menu li{
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
-	font: bold 14px Tahoma;
-}
-
 
 #main_section{
+margin: 0;
 	border: 1px solid olive;
 border-radius: 5px;
 text-align: center;
-	margin: 20px;
 	padding: 20px;
-background: linear-gradient(khaki,white);
+background: beige;
 }
-
-
-
-
-
 
 
 .column{
@@ -95,7 +72,9 @@ text-shadow: 1px 1px 2px #000;
 #home{
 text-decoration: none;
 font: bold 14px Tahoma;
-color: khaki;
+color: #FFFF33;
+opacity: 0.7;
+padding: 20px;
 }
 
 
@@ -113,11 +92,10 @@ font-size: 23px;
 
 
 input[type=button] {
-background-color: #D2B48C;   
-width: 40px;
-height: 40px;
-font-size: 24px;
-color: beige;
+background-color:#FFFF33;
+width: 30px;
+height: 30px;
+font-size: 20px;
 border-radius: 5px;
 box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 opacity: 0.7;
@@ -129,7 +107,7 @@ opacity:1;
 }
 
 #buttonsDiv{
-//position: fixed;
+margin: 0;
 text-align: right;
-padding: 10px;
+padding: 5px;
 }

@@ -66,11 +66,12 @@ float:right;
 
 #main_section{
 	border: 1px solid olive;
-border-radius: 25px;
+ border-radius: 5px;
 text-align: center;
 	margin: 20px;
 	padding: 20px;
  background: linear-gradient(khaki,white);
+width: 300px;
 }
 
 
