@@ -8,10 +8,43 @@ body{
 	width: 100%;
 	display: -webkit-box;
 	-webkit-box-pack: center;
-  background: black; 
- // background: linear-gradient(black 10%,olive, black 50%,olive, khaki,olive,black);
+   background: black; 
+
 }
 
+#big_wrapper{
+	max-width: 800px; 
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+
+}
+
+
+#flag{
+font-size: 11px;
+}
+
+ul{
+float:right;
+}
+
+
+#top_menu li{
+    
+	display: inline-block;
+	list-style: none;
+	font: bold 25px Tahoma;
+  //  color:#CCE5FF; 
+color: khaki;
+}
+
+
+#main_section{
+    margin: 20px auto;
+	-webkit-box-flex: 1;
+   
+}
 
 
 .dropdown {
@@ -24,7 +57,7 @@ body{
     background:#1c1c1c;
   //  color: #CCE5FF;
    color: khaki;
- padding: 16px;
+   padding: 16px;
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -35,6 +68,9 @@ body{
   
     font-size: 19px;
 }
+
+
+
 
 
 .dropdown-content {
@@ -58,6 +94,10 @@ body{
 
 
 .dropdown-content a:hover {background-color:#CCE5FF;}
+
+
+
+
 
 .show {display:block;}
 
@@ -124,58 +164,49 @@ body{
 }
 
 
- /* preloader spinner */
+#spinnerDiv{
+    background: rgba(0,0,0,0.9);
+	opacity: 0.9;
+    z-index:10;
+	width: 100%;
+	height: 100%;
+    padding-top: 200px;
+    padding-left: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: yellow;
+}
+
 
 .spinner{
-width: 100px;
-height: 100px;
-background: #eee;
-border-radius: 50%;
-position: relative;
-margin: 50px;
-display: inline-block;
+width: 80px;
+height: 80px;
+border: 2px solid #f3f3f3;
+border-top: 5px solid skyblue;
+border-bottom: 5px solid orange;
+border-left: 5px solid lime;
+border-right: 5px solid wheat;
+border-radius: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: spin 0.5s infinite linear;
+
 }
 
-
-.spinner:after, .spinner:before{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
 
 @keyframes spin{
-  0%{
-    transform: rotate(0deg);}
-  100%{
-    transform: rotate(360deg)}
-  }
-  
-
-.spinner-3{
-  background: none;
-  border: 4px solid #eee;
-}  
-.spinner-3:after{
-    width: 4px;
-    height: 66px;
-    background: orangered;
-    border-radius: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -2px;
-    transform-origin: top center;
-    animation: spin 2s linear infinite;
-  }  
-  
-#pacmanDiv{
-position: absolute;
-height: 150px;
-width: 300px;
-z-index: 20px;
-opacity: 0.8;
-margin: 80px;
-// background: rgba(0,0,0,0.2);
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
 }
+
