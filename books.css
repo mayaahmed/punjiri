@@ -14,6 +14,9 @@ body{
 
 
 
+
+
+
 #big_wrapper{
     margin: 0;
 	max-width: 800px; 
@@ -53,6 +56,8 @@ border-radius: 5px;
 text-align: center;
 	padding: 20px;
 background: beige;
+display: flex;
+	flex-wrap: wrap;
 }
 
 
