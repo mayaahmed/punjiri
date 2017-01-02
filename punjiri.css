@@ -20,8 +20,10 @@ display: flex;
 
 #wrapDiv{
 position: relative;
-margin-top: 130px;
+margin-top: 170px;
 width: 100%;
+display: flex;
+flex-wrap: wrap;
 }
 
 .logo{
@@ -61,6 +63,7 @@ opacity: 1;
 
 #main_section{
 margin: 30px;
+margin-top: 70px;
 position: relative;
 border: 1px solid olive;
 display: flex;
@@ -104,11 +107,15 @@ font-size: 23px;
 width: 100%;
 position: relative;
 padding: 10px;
+margin-bottom: 10px;
 font-size: 22px;
 color: khaki;
 overflow: hidden;
 z-index: -1;
 opacity: 0.8;
+background: black;
+
+
 }
 
 
@@ -132,7 +139,7 @@ color: orange;
 .nav-side{
 position: fixed;
 z-index: 2;
-margin-top: 15%;
+margin-top: 115px;
 width: 100%;
 height: 700px;
 max-width: 250px;
@@ -158,7 +165,7 @@ border-bottom-right-radius: 3px;
 opacity: 0.8;
 box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 color: khaki;
-font-size: 16px;
+font-size: 20px;
 }
 
 
