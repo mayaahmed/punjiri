@@ -1,0 +1,118 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+  background: black; 
+ }
+
+
+
+
+
+
+
+#big_wrapper{
+    margin: 0;
+	max-width: 80%; 
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+
+}
+
+
+
+
+
+#top_header{
+	font: bold 40px Comic Sans MS;
+   color: khaki;
+  
+}
+#iconpic{ float: left;
+margin: 2px;
+}
+
+
+#titleTextdiv{
+float: left;
+margin: 20px;
+color: #FFFF33;
+text-shadow: 3px 3px 0 #000;
+opacity: 0.7;
+}
+
+
+#main_section{
+margin: 0;
+	border: 1px solid olive;
+border-radius: 5px;
+text-align: center;
+	padding: 20px;
+background: beige;
+display: flex;
+	flex-wrap: wrap;
+}
+
+
+.column{
+float: left;
+text-align: center;
+color: olive;
+padding-right: 50px;
+padding-top: 30px;
+	font: bold 22px Comic Sans MS;
+text-shadow: 1px 1px 2px #000;
+}
+
+
+
+
+#home{
+text-decoration: none;
+font: bold 14px Tahoma;
+color: #FFFF33;
+opacity: 0.7;
+padding: 20px;
+}
+
+
+.column a{
+text-decoration: none;
+color: olive;
+}
+
+
+.column a:hover{
+font-size: 23px;
+ cursor: pointer;
+
+}
+
+
+input[type=button] {
+background-color:#FFFF33;
+width: 30px;
+height: 30px;
+font-size: 20px;
+border-radius: 5px;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+opacity: 0.7;
+margin-left: 10px;
+}
+
+input[type=button]:hover{
+opacity:1;
+}
+
+#buttonsDiv{
+margin: 0;
+text-align: right;
+padding: 5px;
+}
