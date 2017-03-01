@@ -66,12 +66,11 @@ float:right;
 
 #main_section{
 width: 50%;
-	border: 1px solid olive;
-border-radius: 25px;
+	
 text-align: center;
 	margin: 20px;
 	padding: 20px;
- background: linear-gradient(khaki,white);
+
 }
 
 
@@ -96,7 +95,8 @@ text-shadow: 1px 1px 2px #000;
 
 #home{
 text-decoration: none;
-font: bold 14px Tahoma;
+font: bold 18px Comic Sans MS;
+
 color: khaki;
 }
 

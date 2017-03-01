@@ -7,7 +7,7 @@ opacity: 0.8;
 margin-left: 1%;
 }
 
-#iconpic:hover{
+#iconpic{
  animation: bounce 1s ease-in infinite;
 }
 

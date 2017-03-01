@@ -1,25 +1,25 @@
 
-
-var overlay = document.getElementById("preloaderOverlay");
+var overlay = document.getElementById("overlay");
 window.addEventListener("load", function(){
     overlay.style.display="none";
 
   })
 
 
+
 var slideDiv = document.getElementById("navId");
  var btn = document.getElementById("toggleButton");
 btn.innerHTML = "Contact";
 
-slideDiv.style.left = "-255px";
+slideDiv.style.left = "-405px";
 
 function toggle(){
 	slideDiv.style.height = window.innerHeight - 60+"px";
-	if(slideDiv.style.left == "-255px"){
+	if(slideDiv.style.left == "-405px"){
 		slideDiv.style.left = "0px";
         btn.innerHTML = "&#8592";
 	} else {
-		slideDiv.style.left = "-255px";
+		slideDiv.style.left = "-405px";
         btn.innerHTML = "Contact";
 	}
 }

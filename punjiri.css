@@ -13,18 +13,40 @@ body{
 
 
 #containerDiv{
+
 margin:0;
 display: flex;
 
+
 }
+
+
+#pagetop{
+	position: fixed;
+	top: 0px;
+	width:100%;
+	height: 125px;
+	background: #333300;	color: #FFF;
+	font-size: 23px;
+	padding-top: 10px;
+	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+	overflow:hidden; 
+}
+
+
+
 
 #wrapDiv{
 position: relative;
-margin-top: 170px;
+ margin-top: 170px;
 width: 100%;
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+
 }
+
+
 
 .logo{
 margin-top: 0px;
@@ -34,7 +56,7 @@ opacity: 0.8;
 margin-left: 1%;
 }
 
-#iconpic:hover{
+#iconpic{
  animation: bounce 1s ease-in infinite;
 }
 
@@ -44,7 +66,8 @@ margin-left: 1%;
   50%{
     transform: translateY(30px);}
 }
-  
+
+
 
 .front{
 margin-top: 50px;
@@ -57,17 +80,24 @@ text-shadow: 1px 0px 2px yellow;
 }
 
 .front:hover{
- // transform: rotate(5deg);
+
 opacity: 1;
+font-size: 36px;
   }
+
+
+
+
 
 #main_section{
 margin: 30px;
 margin-top: 70px;
+width: 80%;
 position: relative;
 border: 1px solid olive;
 display: flex;
-flex-wrap: wrap;
+flex-wrap:  wrap;
+justify-content: center;
 padding: 20px;
 background: linear-gradient(khaki,white);
  box-shadow: 7px 7px 10px black;
@@ -76,15 +106,13 @@ z-index: -1;
 }
 
 
-
 .column{
-float: left;
 text-align: center;
 color: olive;
 padding-right: 50px;
-padding-top: 30px;
-	font: bold 22px Comic Sans MS;
-text-shadow: 1px 1px 2px #000;
+padding-top: 25px;
+font: bold 22px Comic Sans MS;
+// flex: 2;
 }
 
 
@@ -93,12 +121,14 @@ text-shadow: 1px 1px 2px #000;
 .column a{
 text-decoration: none;
 color: olive;
+opacity: 0.7;
 }
 
 
 .column a:hover{
-font-size: 23px;
+// font-size: 23px;
  cursor: pointer;
+opacity: 1;
 
 }
 
@@ -107,7 +137,8 @@ font-size: 23px;
 width: 100%;
 position: relative;
 padding: 10px;
-margin-bottom: 10px;
+margin-left: 5px;
+margin-bottom: 20px;
 font-size: 22px;
 color: khaki;
 overflow: hidden;
@@ -139,25 +170,35 @@ color: orange;
 .nav-side{
 position: fixed;
 z-index: 2;
-margin-top: 115px;
+margin-top: 75px;
+// margin-top: 115px;
 width: 100%;
 height: 700px;
-max-width: 250px;
+max-width: 400px;
 background: black;
 box-sizing: border-box;
 padding: 20px;
-color: beige;
-opacity: 0.9;
+// opacity: 0.9;
 transition: left 1s linear 0s;
+
 }
+
+
+.nav-side a{
+text-decoration: none;
+color: khaki;
+	font-size: 18px;
+opacity: 0.8;
+}
+
+
 
 .nav-toggle{
 position: absolute;
-right: -70px;
+right: -90px;
 top: 20px;
 width: 70px;
 height: 30px;
-// background-color: khaki;
 line-height: 30px;
 text-decoration: none;
 text-align: center;
@@ -171,4 +212,8 @@ font-size: 20px;
 
 .nav-toggle:hover{
 opacity: 1;
+}
+
+#toggleButton{
+	font-size: 22px;
 }
