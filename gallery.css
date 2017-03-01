@@ -64,17 +64,17 @@ float:right;
 	display: inline-block;
 	list-style: none;
 	padding: 5px;
-	font: bold 14px Tahoma;
+font: bold 30px Comic Sans MS;
+
 }
 
 
 #main_section{
-	border: 1px solid olive;
-border-radius: 25px;
+
 text-align: center;
 	margin: 20px;
 	padding: 20px;
- background: linear-gradient(khaki,white);
+
 width: 60%;
 
 }

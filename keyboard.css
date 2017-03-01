@@ -30,7 +30,7 @@ margin: 2px;
 
 #titleTextdiv{
 float: left;
-margin: 20px;
+margin: 40px;
 color: #FFFF33;
 // -webkit-text-stroke: 1px black;
 text-shadow: 3px 3px 0 #000;
@@ -70,7 +70,7 @@ float:right;
 text-align: center;
 	margin: 20px;
 	padding: 20px;
- background: linear-gradient(khaki,white);
+ background: beige;
 width: 300px;
 }
 
@@ -95,7 +95,8 @@ text-shadow: 1px 1px 2px #000;
 
 #home{
 text-decoration: none;
-font: bold 14px Tahoma;
+	font: bold 18px Comic Sans MS;
+
 color: khaki;
 }
 
@@ -110,4 +111,10 @@ color: olive;
 font-size: 23px;
  cursor: pointer;
 
+}
+#buttonsDiv{
+margin: 0;
+margin-left: 300px;
+text-align: left;
+padding: 15px;
 }

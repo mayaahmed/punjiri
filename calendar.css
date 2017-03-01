@@ -19,7 +19,7 @@ body{
 
 #big_wrapper{
     margin: 0;
-	max-width: 800px; 
+	max-width: 80%; 
 	display:-webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-box-flex: 1;
@@ -40,8 +40,6 @@ margin: 2px;
 }
 
 
-
-
 #titleTextdiv{
 float: left;
 margin: 40px;
@@ -54,21 +52,20 @@ opacity: 0.7;
 opacity: 0.9;
 }
 
-
 #main_section{
-margin: 0;
-	border: 1px solid olive;
+margin: 20px;
+width: 240px;
+//	border: 1px solid olive;
 border-radius: 5px;
 text-align: center;
-	padding: 20px;
-background: beige;
+	padding: 25px;
+// background: beige;
 display: flex;
 	flex-wrap: wrap;
 }
 
 
 .column{
-float: left;
 text-align: center;
 color: olive;
 padding-right: 50px;
@@ -76,6 +73,8 @@ padding-top: 30px;
 	font: bold 22px Comic Sans MS;
 text-shadow: 1px 1px 2px #000;
 }
+
+
 
 
 #home{
@@ -93,7 +92,6 @@ opacity: 0.9;
 }
 
 
-
 .column a{
 text-decoration: none;
 color: olive;
@@ -101,8 +99,9 @@ color: olive;
 
 
 .column a:hover{
-font-size: 23px;
+// font-size: 23px;
  cursor: pointer;
+opacity: 0.9;
 
 }
 
@@ -124,6 +123,7 @@ opacity:1;
 
 #buttonsDiv{
 margin: 0;
-text-align: right;
-padding: 5px;
+margin-left: 200px;
+text-align: left;
+padding: 15px;
 }
