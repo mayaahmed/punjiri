@@ -3,172 +3,113 @@
 
 
 
-<!--  Programmer : Maya Ahmed 
-      Files: index.html;  
-      Date: "August 18 2016" -->
+  <!--  Programmer : Maya Ahmed 
+	Files: index.html;  
+	Date: "August 18 2016" -->
 
-<head>
-	<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
     <title>Punjiri: Web and Mobile Technologies.</title>
-        <link rel="stylesheet" type="text/css"  href="punjiri.css"> 
-           <link rel="icon" type="image/png" href="punjiri.png">   
- 
-</head>
+    <link rel="stylesheet" type="text/css"  href="punjiri.css"> 
+    <link rel="icon" type="image/png" href="punjiri.png">   
+    <link rel="stylesheet" type="text/css"  href="punjiriIcon.css">  
+    <link rel="stylesheet" type="text/css"  href="spinner.css">  
+  </head>
 
 
-<body>
+  <body>
 
 
-<div id="containerDiv">
+    <div id="containerDiv">
 
 
 
 
 
-<div id="pagetop">
-           <header id="top_header">
-           <div class="front">  Punjiri Web and Mobile Technologies </div>
+      <div id="pagetop">
+        <header id="top_header">
+
+          <div class="front">  Punjiri Web and Mobile Technologies </div>
           <div class="logo"> <img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"></div>
- 	      </header>
-</div>
-    
+ 	</header>
+      </div>
+      
 
-    
+      
 
 
 
-<div id="wrapDiv">
+      <div id="wrapDiv">
+	<div id="preloaderOverlay">
+	  <div id="pacmanDiv"> <h2 id="loadingText">Loading.....</h2> 
+	    <div class="spinner spinner-3"> </div>
+	  </div>
+	</div>
 
+	<div id="missionDiv">
+	  Mission:  To  reduce the  differences  in  mobile, web,  and
+	  computer, or any other device,  to only screen sizes. 
+	</div>
 
-<div id="missionDiv">
-Mission:  To  reduce the  differences  in  mobile, web,  and
-computer, or any other device,  to only screen sizes. 
-</div>
+	<div id="main_section"> 
 
- <div id="main_section">  
+	  
+	  
+	  <div class="column"  onclick="">
+	    <a href="moreIndex.html">Utilities </a>
+	    <p><a href="moreIndex.html"> <img  src="keyboardIcon.png"  height=90 width=200 ></a></p>  	
+	  </div>
+	  <div class="column"  onclick="">
+	    <a href="Games/index.html">Games</a> 
+	    <p><a href="Games/index.html"> <img id="gamespic" src="sudoku.png"  height=150 width=150 ></a></p>
+	  </div> 
 
-<div class="column"  onclick="">
-<p> <a href="moviesIndex.html">Animated Stories </p>				
+	  <div class="column"  onclick="">
+	    <a href="nodeJsIndex.html">Youtube Video Demos</a>	
+	    <p><a href="nodeJsIndex.html"><img  src="webmusic.png"  height=150 width=150 ></a></p>
+	  </div> 
 
-</div>
+	  
 
-<div class="column"  onclick="">
-<p> <a href="booksIndex.html">Books</p>				
+	  
 
-</div>
+	 
+	    <nav id="navId" class="nav-side" >
+	      <div id="contactDiv"> 
+	      </div>
+	      <a href="#" class="nav-toggle" id="toggleButton"  onclick="toggle()"></a>
+	    </nav>
 
-<div class="column"  onclick="">
- <p> <a href="calendarIndex.html">Calendar</p>				
-    
-</div>
 
 
 
 
-<div class="column"  onclick="">
 
-<a href ="galleryIndex.html" > Gallery </a>
-    
 
-</div>
 
 
-<div class="column"  onclick="">
-<a href="Games/index.html">Games</a>
 
-</div> 
+	</div> <!-- containerDIv -->
 
 
 
 
-<div class="column"  onclick="">
-<a href ="imageEditorIndex.html" > Image Editor </a>
 
-</div>
 
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<div class="column"  onclick="">
-<p> <a href="keyboardIndex.html">Indic Keyboard</p>				
-</div>
+	  ga('create', 'UA-85159230-1', 'auto');
+	  ga('send', 'pageview');
 
+	</script> 
 
+	<script src="contact.js"></script>
+	<script src="loader.js"></script> 
 
-<div class="column"  onclick="">
-<p> <a href="mathmachineIndex.html">Math Machine</p>				
- 	
-</div>
 
-<div class="column"  onclick="">
-<p> <a href="nodeJsIndex.html">Node.js Apps</p>				
-</div>
-
-
-
-<div class="column"  onclick="">
-	<p> <a href="notebookIndex.html">Notebook</p>
-	
-</div>
-
-
-
-<div class="column"  onclick="">
-	<p> <a href="nurseaidIndex.html">Nurse Aid</p>
-
-</div>
-
-
-
-
-   <div class="column"  onclick="">
-     <p> <a href="paintIndex.html">Paint</p>				
-    
-   </div>
-
-
-<div class="column"  onclick="">
-     <p> <a href="talkingKeyboardIndex.html">Talking Indic Keyboard</p>				
-    
-   </div>
-
-
-<div>
-
-<nav id="navId" class="nav-side" >
-<div id="contactDiv"> 
-</div>
-<a href="#" class="nav-toggle" id="toggleButton"  onclick="toggle()"></a>
-</nav>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-</div> <!-- containerDIv -->
-
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-85159230-1', 'auto');
-  ga('send', 'pageview');
-
-</script> 
-
-<script src="contact.js"></script> 
-
-</body>
+  </body>
 </html>

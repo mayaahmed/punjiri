@@ -1,219 +1,182 @@
 *{
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
-	width: 100%;
-	display: flex;
+    width: 100%;
+    display: flex;
     background: black;
 }
 
 
-
-
 #containerDiv{
-
-margin:0;
-display: flex;
-
-
+    margin:0;
+    display: flex;
 }
-
 
 #pagetop{
-	position: fixed;
-	top: 0px;
-	width:100%;
-	height: 125px;
-	background: #333300;	color: #FFF;
-	font-size: 23px;
-	padding-top: 10px;
-	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
-	overflow:hidden; 
+    position: fixed;
+    top: 0px;
+    width:100%;
+    height: 125px;
+    background: #333300;	color: #FFF;
+    font-size: 23px;
+    padding-top: 10px;
+    transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+    overflow:hidden; 
 }
-
-
-
 
 #wrapDiv{
-position: relative;
- margin-top: 170px;
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
+    position: relative;
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-
-
-.logo{
-margin-top: 0px;
-position: absolute;
-z-index: 3;
-opacity: 0.8;
-margin-left: 1%;
-}
-
-#iconpic{
- animation: bounce 1s ease-in infinite;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(0px);}
-  50%{
-    transform: translateY(30px);}
-}
-
 
 
 .front{
-margin-top: 50px;
-position: absolute;
-opacity: 0.8;
-color: khaki;
-font: bold 35px Comic Sans MS;
-margin-left: 20%;
-text-shadow: 1px 0px 2px yellow;
+    margin-top: 50px;
+    position: absolute;
+   opacity: 0.9;
+    color: khaki;
+    font: bold 35px Comic Sans MS;
+    margin-left: 20%;
+    text-shadow: 1px 0px 2px black;
 }
 
 .front:hover{
-
-opacity: 1;
-font-size: 36px;
-  }
-
-
-
-
+    opacity: 1;
+    font-size: 36px;
+}
 
 #main_section{
-margin: 30px;
-margin-top: 70px;
-width: 80%;
-position: relative;
-border: 1px solid olive;
-display: flex;
-flex-wrap:  wrap;
-justify-content: center;
-padding: 20px;
-background: linear-gradient(khaki,white);
- box-shadow: 7px 7px 10px black;
-opacity: 0.8; position: absolute;
-z-index: -1;
+    margin: 30px;
+    margin-top: 70px;
+    width: 80%;
+    position: relative;
+    border: 1px solid olive;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(khaki,white);
+    box-shadow: 7px 7px 10px black;
+    opacity: 0.9; position: absolute;
+    z-index: -1;
 }
 
 
 .column{
-text-align: center;
-color: olive;
-padding-right: 50px;
-padding-top: 25px;
-font: bold 22px Comic Sans MS;
-// flex: 2;
+    text-align: center;
+    color: olive;
+    padding-right: 50px;
+    padding-top: 25px;
+    font: bold 22px Comic Sans MS;
+    // flex: 2;
 }
 
 
 
 
 .column a{
-text-decoration: none;
-color: olive;
-opacity: 0.7;
+    text-decoration: none;
+    color: olive;
+    opacity: 0.9;
 }
 
 
 .column a:hover{
-// font-size: 23px;
+    // font-size: 23px;
  cursor: pointer;
-opacity: 1;
+ opacity: 1;
 
 }
 
 
 #missionDiv{
-width: 100%;
-position: relative;
-padding: 10px;
-margin-left: 5px;
-margin-bottom: 20px;
-font-size: 22px;
-color: khaki;
-overflow: hidden;
-z-index: -1;
-opacity: 0.8;
-background: black;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: khaki;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.8;
+    background: black;
 
 
 }
 
 
-
-
-.moreLink{
-color: green;
-font-size: 18px;
-
-text-decoration: none;
-}
-
-.moreLink:hover{
-
-color: orange;
+#contactDiv{
+    color: khaki;
+    opacity: 0.8;
 }
 
 
 
 
 .nav-side{
-position: fixed;
-z-index: 2;
-margin-top: 75px;
-// margin-top: 115px;
-width: 100%;
-height: 700px;
-max-width: 400px;
-background: black;
-box-sizing: border-box;
-padding: 20px;
-// opacity: 0.9;
-transition: left 1s linear 0s;
+    position: fixed;
+    z-index: 2;
+    // margin-top: 75px;
+    margin-top: 210px;
+    width: 100%;
+    height: 700px;
+    max-width: 400px;
+    background: black;
+    box-sizing: border-box;
+    padding: 20px;
+    // opacity: 0.9;
+    transition: left 1s linear 0s;
 
 }
 
 
 .nav-side a{
-text-decoration: none;
-color: khaki;
-	font-size: 18px;
-opacity: 0.8;
+    text-decoration: none;
+    color: khaki;
+    font-size: 18px;
+    opacity: 0.8;
 }
 
 
 
 .nav-toggle{
-position: absolute;
-right: -90px;
-top: 20px;
-width: 70px;
-height: 30px;
-line-height: 30px;
-text-decoration: none;
-text-align: center;
-border-bottom-right-radius: 3px;
-opacity: 0.8;
-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-color: khaki;
-font-size: 20px;
+    position: absolute;
+    right: -90px;
+    top: 20px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom-right-radius: 3px;
+    opacity: 0.8;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color: khaki;
+    font-size: 20px;
 }
 
 
 .nav-toggle:hover{
-opacity: 1;
+    opacity: 1;
 }
 
 #toggleButton{
-	font-size: 22px;
+    font-size: 22px;
+}
+
+
+#utilitiesHome{
+float: right;
+ text-decoration: none;
+color: khaki;
+margin-right: 75px;
+ font: bold 22px Comic Sans MS;
 }
