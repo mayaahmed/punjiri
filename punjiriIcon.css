@@ -8,6 +8,9 @@ margin-left: 1%;
 }
 
 #iconpic{
+ animation: bounce 1s ease-in 2;
+}
+#iconpic:hover{
  animation: bounce 1s ease-in infinite;
 }
 
